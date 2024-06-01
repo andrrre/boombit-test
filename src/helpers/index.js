@@ -19,14 +19,7 @@ export const processChartData = (data, filter) => {
   const datasets = groups.map((group, index) => ({
     label: group,
 
-    backgroundColor: [
-      "#FF6384",
-      "#36A2EB",
-      "#FFCE56",
-      "#4BC0C0",
-      "#9966FF",
-      "#FF9F40",
-    ][index % 6],
+    backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"][index],
 
     data: labels.map((label) =>
       filteredData[label] ? getData(filteredData[label], filter, group) : 0
