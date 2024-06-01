@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 0.5px solid #fff;
+  border-radius: 5px;
+}
+
+.tabs .tab {
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.tabs .tab:last-of-type {
+  margin-right: 0;
+}
+
+.tabs .active {
+  background-color: #0081cf;
+}
